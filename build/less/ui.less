@@ -1,0 +1,50 @@
+.my {
+	&-table {
+		display: table;
+	}
+	&-btn {
+		&.design-yellow {
+			color: @blue;
+			font-size: 14px;
+			border-radius: 0;
+			border: none;
+			padding: 5px 15px;
+			background: #ffdf00;
+		}
+	}
+	&-input {
+		border-color: #a1a1a1;
+		box-shadow: none;
+		border-radius: 0;
+	}
+	&-textarea {
+		border-color: #a1a1a1;
+		box-shadow: none;
+		border-radius: 0;
+		resize:vertical;
+	}
+}
+.download {
+	font-size: 13px;
+	color: #212121;
+	margin: 10px auto 35px;
+	display: inline-block;
+	span {
+		display: inline-block;
+		vertical-align: middle;
+		border-bottom: 1px dashed #212121;
+	}
+	.icon {
+		margin-right: 5px;
+		background: url(../img/download.png) center center no-repeat;
+		width: 18px;
+		height: 20px;
+		border-color: transparent;
+	}
+	&:hover,&:focus {
+		text-decoration: none;
+		span {
+			border-color: transparent;
+		}
+	}
+}

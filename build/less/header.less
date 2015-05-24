@@ -1,0 +1,108 @@
+.header {
+	&-lvl {
+		&-1 {
+			padding: 30px 0;
+			border-top: 3px solid #ffde00;
+			.logo {
+				display: table;
+				& > div {
+					display: table-cell;
+					vertical-align: middle;
+					
+				}
+				p {
+					margin-bottom: 0;
+					color: #414651;
+					padding-left: 15px;
+				}
+				.name {
+					.RSCM;
+					font-size: 29px;
+					line-height: 29px;
+				}
+				.desc {
+					font-size: 15px;
+				}
+				&:hover,&:focus {
+					text-decoration: none;
+				}
+			}
+			.pull-right {
+				padding-top: 10px;
+			}
+			.phone {
+				display: inline-block;
+				vertical-align: middle;
+				.op;
+				font-weight: 700;
+				color: #414651;
+				font-size: 20px;
+				margin-bottom: 0;
+				&:before {
+					content: '';
+					width: 21px;
+					height: 22px;
+					background: url(../img/phone.png) center center no-repeat;
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 15px;
+				}
+			}
+			.call {
+				font-size: 13px;
+				color: #414651;
+				text-decoration: none;
+				border-bottom: 1px dashed #414651;
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 30px;
+				&:hover,&:focus {
+					border-color: transparent;
+				}
+			}
+		}
+		&-2 {
+			border-top: 1px solid #eeeeef;
+			box-shadow: 0px 2px 3px 0px rgba(0,0,0,.1);
+			.navbar.navbar-default {
+				background: 0 0;
+				border:none;
+				border-radius: 0;
+				margin: 0;
+				padding: 15px 0;
+				min-height: 0;
+			}
+			ul.navbar-nav {
+				float: none !important;
+				display: flex;
+				justify-content:space-between;
+			}
+			.navbar-nav>li {
+				float: none !important;
+				order: 1;
+				flex-grow: 1;
+				a {
+					padding: 5px 10px;
+					display:table;
+					margin: 0 auto;
+					border: 2px solid transparent;
+					color: #414651;
+					font-weight: 700;
+					&:hover,&:focus {
+						background: 0 0;
+						border-color: #ffdf00;
+					}
+				}
+				&.active {
+					a {
+						background: 0 0;
+						border-color: #ffdf00;
+						&:hover,&:focus {
+							background: 0 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
