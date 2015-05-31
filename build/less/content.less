@@ -822,4 +822,70 @@
 			}
 		}
 	}
+	.slider-main {
+		position: relative;
+		.inner {
+			padding: 140px 0;
+			&.bg-1 {
+				background: url(../img/bg-banner.jpg) center center no-repeat;
+				background-size: cover;
+			}
+			&.bg-2 {
+				background: url(../img/bg-banner.jpg) center center no-repeat;
+				background-size: cover;
+			}
+		}
+		.title-main {
+			h1,h3 {
+				color: #fff;
+				margin: 0;
+				.RSCM;
+			}
+			hr {
+				border-width: 4px;
+				border-color: @yellow;
+				width: 60px;
+				margin: 0px 0 5px;
+			}
+			h1 {
+				font-size: 35px;
+			}
+			h3 {
+				font-size: 28px;
+			}
+		}
+		.my-btn {
+			margin: 40px 0 0 0;
+		}
+		
+	}
+	.navigation-slider {
+		position: absolute;
+		left:0;
+		top: 50%;
+		margin-top: -32px;
+		width: 100%;
+		.icon-left {
+			position: relative;
+			z-index:1;
+			width: 65px;
+			height: 65px;
+			background: url(../img/navi.png)  left top 6px no-repeat;
+			cursor: pointer;
+			&:hover,&:focus {
+				background: url(../img/navi.png)  left bottom 2px no-repeat;
+			}
+		}
+		.icon-right {
+			width: 65px;
+			position: relative;
+			z-index:1;
+			height: 65px;
+			background: url(../img/navi.png)  right top 6px no-repeat;
+			cursor: pointer;
+			&:hover,&:focus {
+				background: url(../img/navi.png)  right bottom 2px no-repeat;
+			}
+		}
+	}
 }
