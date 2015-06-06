@@ -311,13 +311,101 @@
 					font-size: 23px;
 					.RSCM;
 					color: @blue;
-					padding: 15px 60px 15px 50px;
+					padding: 15px 60px 15px 60px;
 					line-height: 1;
 					border-top: 1px solid #c7c7c7;
-					background: url(../img/menu.png) left 15px center no-repeat;
 					position: relative;
+					&:before {
+						content: '';
+						width: 50px;
+						height: 30px;
+						position: absolute;
+						left: 5px;
+						top: 50%;
+						margin-top: -15px;
+					}
+					&.icon-1 {
+						&:before {
+							background: url(../img/service-icon-1.png) top center no-repeat;
+						}
+					}
+					&.icon-2 {
+						&:before {
+							background: url(../img/service-icon-2.png) top center no-repeat;
+						}
+					}
+					&.icon-3 {
+						&:before {
+							background: url(../img/service-icon-3.png) top center no-repeat;
+						}
+					}
+					&.icon-4 {
+						&:before {
+							background: url(../img/service-icon-4.png) top center no-repeat;
+						}
+					}
+					&.icon-5 {
+						&:before {
+							background: url(../img/service-icon-5.png) top center no-repeat;
+						}
+					}
+					&.icon-6 {
+						&:before {
+							background: url(../img/service-icon-6.png) top center no-repeat;
+						}
+					}
+					&.icon-7 {
+						&:before {
+							background: url(../img/service-icon-7.png) top center no-repeat;
+						}
+					}
+					&.icon-8 {
+						&:before {
+							background: url(../img/service-icon-8.png) top center no-repeat;
+						}
+					}
 					&:hover,&:focus {
 						text-decoration: none;
+						&.icon-1 {
+							&:before {
+								background-position: 50% -39px;
+							}
+						}
+						&.icon-2 {
+							&:before {
+								background-position: 50% -41px;
+							}
+						}
+						&.icon-3 {
+							&:before {
+								background-position: 50% -35px;
+							}
+						}
+						&.icon-4 {
+							&:before {
+								background-position: 50% -43px;
+							}
+						}
+						&.icon-5 {
+							&:before {
+								background-position: 50% -48px;
+							}
+						}
+						&.icon-6 {
+							&:before {
+								background-position: 50% -44px;
+							}
+						}
+						&.icon-7 {
+							&:before {
+								background-position: 50% -42px;
+							}
+						}
+						&.icon-8 {
+							&:before {
+								background-position: 50% -40px;
+							}
+						}
 					}
 					&:nth-child(1) {
 						border-top: none;
@@ -509,6 +597,7 @@
 			order: 1;
 			justify-content:space-around;
 			padding-right: 15px;
+			cursor: pointer;
 			&:last-child {
 				padding-right: 0;
 			}
@@ -866,6 +955,7 @@
 		margin-top: -32px;
 		width: 100%;
 		.icon-left {
+			-webkit-user-select: none;
 			position: relative;
 			z-index:1;
 			width: 65px;
@@ -877,6 +967,7 @@
 			}
 		}
 		.icon-right {
+			-webkit-user-select: none;
 			width: 65px;
 			position: relative;
 			z-index:1;
