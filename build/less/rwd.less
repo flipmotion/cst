@@ -7,6 +7,9 @@
 	.content .learn-more .item .inner {
 		margin-left: 20px;
 	}
+	.content .left-side.menu-projects.services-menu .menu-item-lvl-1 {
+		font-size: 18px;
+	}
 }
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -24,10 +27,25 @@
 			margin-bottom: 0;
 		}
 	}
+	.content.contacts .absolute .contacts-info {
+		transform: translateY(20%);
+	}
+	.content .left-side.menu-projects.services-menu .menu-item-lvl-1 {
+		font-size: 18px;
+	}
 }
 
 /* Landscape phones and portrait tablets */
 @media (min-width: 480px) and (max-width: 767px) {
+	.content .left-side.menu-projects.services-menu .menu-item-lvl-1 {
+		font-size: 18px;
+	}
+	.content .title {
+		text-align: center;
+	}
+	.content .title.half-width {
+		width: 100%;
+	}
 	.content .my-flex-box {
 		display: block;
 	}
@@ -74,8 +92,33 @@
 .content .banner-main .title-main {
 	margin:0 auto;
 }
-
-
+.content.contacts .absolute .contacts-info {
+		transform: translateY(0%);
+	}
+	.content .map {
+		position: relative;
+		top: auto;
+		bottom: auto;
+	}
+.sticky-page.contacts,
+	.content.contacts {
+	height: auto;
+	min-height: 0;
+}
+	.content .form-send .pull-right {
+		float: none !important;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	.header {
 		position: relative;
 		padding-top: 80px;
@@ -117,9 +160,33 @@
 		float: none !important;
 		text-align: center !important;
 	}
+	.content .form-send button {
+		width: 100%;
+	}
+	body .modal .modal-dialog {
+		width: 100%;
+	}
 }
 
 @media (min-width:0px) and (max-width: 479px) {
+	body .modal .modal-dialog{
+		width: 100%;
+	}
+	body .modal .modal-body {
+		padding: 30px 15px;
+	}
+	.content .form-send .pull-right {
+		float: none !important;
+	}
+	.content .form-send button {
+		width: 100%;
+	}
+	.content .title {
+		text-align: center;
+	}
+	.content .title.half-width {
+		width: 100%;
+	}
 	.content .my-flex-box {
 		display: block;
 	}
@@ -166,8 +233,22 @@
 	display: table;
 	margin: 0 auto 30px;
 }
-	
-	
+	.content.contacts .absolute .contacts-info {
+		transform: translateY(0%);
+	}
+	.content .map {
+		top: auto;
+		position: relative;
+		bottom: auto;
+	}
+	.sticky-page.contacts,
+	.content.contacts {
+	height: auto;
+	min-height: 0;
+}
+.content .left-side.menu-projects.services-menu .menu-item-lvl-1 {
+		font-size: 18px;
+	}
 	
 	
 	

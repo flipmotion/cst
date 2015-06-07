@@ -53,6 +53,64 @@
 		resize:vertical;
 	}
 }
+.modal .modal-content {
+	border-radius: 0;
+}
+.modal .modal-dialog {
+	width: 480px;
+}
+.modal  {
+	.modal-body {
+		position: relative;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 50px;
+		padding-right: 50px;
+		.close {
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			width: 18px;
+			height: 18px;
+			background: url(../img/close-2.png) center center no-repeat;
+			opacity: .9;
+		}
+	}
+	.title  h4{
+		font-size: 33px;
+		.RSCR;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.form-send {
+		margin-top: 20px;
+		.form-group.has-error {
+			input {
+				border-color: #a94442;
+			}
+		}
+		input {
+			padding: 10px 5px;
+			height: auto;
+			border-width: 2px;
+			border-color: #414751;
+			&:focus {
+				box-shadow: none;
+				border-color: #ffde00;
+			}
+		}
+		button {
+			padding: 15px 5px;
+			font-weight: bold;
+			width: 100%;
+		}
+	}
+	.title hr {
+		margin: 1px auto 5px;
+		border-width: 2px;
+		border-color:#ffde00;
+	}
+}
 .download {
 	font-size: 13px;
 	color: #212121;

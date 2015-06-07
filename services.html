@@ -23,7 +23,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-md-6 col-sm-6">
-							<a href="#" class="logo">
+							<a href="#" class="logo" data-toggle="modal" data-target="#thx">
 								<div>
 									<img src="assets/img/logo.png">
 								</div>
@@ -60,13 +60,29 @@
 
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								  <ul class="nav navbar-nav">
-									<li class="active"><a href="#">Компания<span class="sr-only">(current)</span></a></li>
-									<li><a href="#">Виды работ</a></li>
-									<li><a href="#">Проекты и заказчики</a></li>
-									<li><a href="#">База знаний</a></li>
-									<li><a href="#">Контакты</a></li>
-								  </ul>
+									<ul class="nav navbar-nav">
+										<li class="active"><a href="#">Компания<span class="sr-only">(current)</span></a></li>
+										<li><a href="#">Виды работ</a></li>
+										<li><a href="#">Проекты и заказчики</a></li>
+										<li><a href="#">База знаний</a></li>
+										<li><a href="#">Контакты</a></li>
+										<li class="visible-xs">
+											<a class="menu-item-lvl-1 icon-6 collapsed" data-toggle="collapse" href="#menu6" aria-expanded="false" aria-controls="menu6">
+												Промышленные полы
+											</a>
+											<div class="collapse" id="menu6">
+												<div class="menu-wrap">
+													<ul>
+														<li class="active"><a href="#">Кровли из листового и рулонного металла (фальцевая)</a></li>
+														<li><a href="#">Кровли</a></li>
+														<li><a href="#">Кровли из листового и рулонного металла (фальцевая)</a></li>
+														<li><a href="#">Кровли из листового и рулонного металла (фальцевая)</a></li>
+														<li><a href="#">Кровли из листового и рулонного металла (фальцевая)</a></li>
+													</ul>
+												</div>
+											</div>
+										</li>
+									</ul>
 								</div><!-- /.navbar-collapse -->
 							  </div><!-- /.container-fluid -->
 							</nav>
@@ -259,7 +275,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row hidden-xs">
 							<div class="col-xs-12 col-md-12 col-sm-12">
 								<div class="page-navigation" id="menu" data-spy="affix" data-offset-top="300">
 									<ul class="nav">
@@ -510,6 +526,7 @@
 											</div>
 										</div>
 									</div>
+									
 								</div>
 								<div class="col-xs-12 col-md-8 col-sm-8">
 									<div class="form-group">
@@ -529,7 +546,19 @@
 							</div>
 							<div class="form-group">
 								<div class="row">
-									<div class="col-xs-12">
+									<div class="col-xs-12 col-md-4 col-sm-4">
+										<div class="form-group">
+											<div class="row">
+												<div class="col-xs-12">
+													<input type="file" data-item="file" class="" required/>
+												</div>
+												<div class="col-xs-12">
+													<div class="help-block with-errors"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-12 col-md-8 col-sm-8">
 										<div class="pull-right clearfix">
 											<button type="submit" class="my-btn design-yellow btn btn-primary" value="block-1" name="from">УЗНАТЬ СТОИМОСТЬ</button>
 										</div>
@@ -607,8 +636,86 @@
 		</section>
 	</section>
 </body>
-
+	<div class="modal fade" id="call" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+					<div class="title border-bottom">
+						<h4>Консультация специалиста</h4>
+						<hr />
+					</div>
+					<p>Заполните форму и наш специалист свяжется с вами в ближайшее время</p>
+					<form class="form-send" data-toggle="validator" action="hendler.php" method="post" role="form" data-form="send">
+						<div class="row">
+							<div class="col-xs-12 col-md-12 col-sm-12">
+								<div class="form-group">
+									<div class="row">
+										<div class="col-xs-12">
+											<p>Ваше имя*</p>
+										</div>
+										<div class="col-xs-12">
+											<input type="text" name="user" class="form-control my-input" placeholder="" required/>
+										</div>
+										<div class="col-xs-12">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-xs-12">
+											<p>Ваш телефон*</p>
+										</div>
+										<div class="col-xs-12">
+											<input type="text" data-mask="phone" class="form-control my-input" placeholder="" required/>
+										</div>
+										<div class="col-xs-12">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-xs-12">
+											<p>E-mail</p>
+										</div>
+										<div class="col-xs-12">
+											<input type="email"  class="form-control my-input" placeholder="" required/>
+										</div>
+										<div class="col-xs-12">
+											<div class="help-block with-errors"></div>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="row">
+										<div class="col-xs-12">
+											<button type="submit" class="my-btn design-yellow btn btn-primary" value="block-1" name="from">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="thx" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+					<p>Спасибо! Ваша заявка на консультацию успешно 
+отправлена.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.nicefileinput.min.js"></script>
 	<!--<link href='assets/css/fontello.css' rel='stylesheet' type='text/css'>-->
 	<link href='assets/css/owl.carousel.css' rel='stylesheet' type='text/css'>
 	<link href='assets/css/grayscale.css' rel='stylesheet' type='text/css'>

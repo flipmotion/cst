@@ -7,6 +7,9 @@ $(document).ready(function() {
 		dots:false,
 		items:1
 	});
+	$("input[type=file]").nicefileinput({
+		label : 'Прикрепить файл (до 20 Мб)'
+	});
 	var to = $('.gallery-main-object img');
 	var tolink = $('.gallery-main-object a');
 	var from = $('.gallery-object img');

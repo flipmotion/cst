@@ -1,4 +1,33 @@
 .content {
+	.NFI-wrapper {
+		width: 100% !important;
+		display: table !important;
+		.NFI-filename {
+			display: table;
+			border: none !impotant;
+			padding: 5px !Important;
+			width: 100%;
+			position: relative;
+			white-space: initial !important;
+			&:after {
+				content: '';
+				width: 10px;
+				height: 10px;
+				background: url(../img/close.png) center center no-repeat;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				margin-top:-5px;
+			}
+		}
+		.NFI-button {
+			white-space: initial !important;
+			display: table;
+			border: 2px solid #ffdf00;
+			float: none !important;
+			padding: 6px !Important;
+		}
+	}
 	.title {
 		h2,
 		h3,
