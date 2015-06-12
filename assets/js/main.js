@@ -30,6 +30,27 @@ $(document).ready(function() {
 		}, 500);
 		return false;
 	});
+	$(function(){
+	  $(document).click(function(event) {
+		if ($(event.target).closest('[data-item="offcanvas-menu"]').length) {
+			$('body').addClass('active');
+			$('a.my-offcanvas-trigger').addClass('active');
+			$('[data-item="offcanvas-menu"]').addClass('active');
+		}
+		else {
+			$('body').removeClass('active');
+			$('a.my-offcanvas-trigger').removeClass('active');
+			$('[data-item="offcanvas-menu"]').removeClass('active');
+		}
+		event.stopPropagation();
+	  });
+	});
+	$('a.my-offcanvas-trigger').click(function(event){
+		$('[data-item="offcanvas-menu"]').toggleClass('active');
+		$('body').toggleClass('active');
+		$(this).toggleClass('active');
+		event.stopPropagation();
+	});
 	$("input[type=file]").nicefileinput({
 		label : 'Прикрепить файл (до 20 Мб)'
 	});

@@ -54,6 +54,11 @@
 	}
 	&-offcanvas-width {
 		width: 280px;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		transform: translateX(280px);
+		transition: @transition;
 		background-color: #FCFCFC;
 		.container,.row,.col-xs-12 {
 			padding-left: 0;

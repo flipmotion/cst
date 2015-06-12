@@ -2,7 +2,15 @@
 @import "fonts";
 @import "mixin";
 body {
+	
+	transition: @transition;
 	@import "ui";
+	&.active {
+		transform: translateX(-280px);
+		overflow: hidden;
+		position: fixed;
+		right: 0;
+	}
 }
 @import "header";
 @import "content";
