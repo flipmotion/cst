@@ -9,13 +9,14 @@ $(document).ready(function() {
 	});
 	
 	var to = $('.gallery-main-object img');
-	var tolink = $('.gallery-main-object a');
+	var tolink = $('.gallery-main-object .this');
 	var from = $('.gallery-object img');
 	from.click(function() {
 		var loc = $(this).attr("src");
 		to.attr("src",loc);
 		tolink.attr("href",loc);
 	});
+	
 	$('.navigation-slider .icon-left').click(function() {
 		owl.trigger('prev.owl.carousel');
 	});
@@ -58,7 +59,7 @@ $(document).ready(function() {
 
 /*OFFCANVAS,INPUTMASK(80%), INPUTFILE DONE*/
 
-
+/*
 +function ($) { "use strict";
 
   var isIphone = (window.orientation !== undefined)
@@ -973,7 +974,7 @@ $(document).ready(function() {
   })
 
 }(window.jQuery);
-
+*/
 
 /*OFFCANVAS,INPUTMASK(80%), INPUTFILE DONE END*/
 
