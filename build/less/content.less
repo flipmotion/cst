@@ -1,4 +1,5 @@
 .content {
+	padding-bottom: 30px;
 	.NFI-wrapper {
 		width: 100% !important;
 		display: table !important;
@@ -746,6 +747,7 @@
 				background: url(../img/pick.png) center left no-repeat;
 				padding-left: 25px;
 				color: @blue;
+				  line-height: 1.5;
 			}
 		}
 		.inner {
@@ -847,7 +849,7 @@
 	}
 	.my-flex-box {
 		display: flex;
-		justify-content: space-between;
+		  justify-content: space-around;
 		margin-left: -10px;
 		margin-right: -10px;
 	}
@@ -857,8 +859,10 @@
 		flex-grow: 1;
 		margin: 20px 10px;
 		border: 2px solid @blue;
+		border-color: @yellow;
 		padding: 15px;
 		width: 25%;
+		max-width: 25%;
 		.title {
 			text-align: center;
 			margin-bottom: 0px;
@@ -868,6 +872,7 @@
 			}
 		}
 		ul {
+			
 			list-style-type: none;
 			margin: 0;
 			padding-left: 0;
@@ -913,41 +918,13 @@
 				background: url(../img/service-icon-8.png) #fff top center no-repeat;
 			}
 		}
-		&:hover,&:focus {
-			border-color: @yellow;
-			.title hr {
-				border-color: @yellow;
-			}
-			.icon-1 {
-				background-position: 50% -39px;
-			}
-			.icon-2 {
-				background-position: 50% -41px;
-			}
-			.icon-3 {
-				background-position: 50% -35px;
-			}
-			.icon-4 {
-				background-position: 50% -43px;
-			}
-			.icon-5 {
-				background-position: 50% -48px;
-			}
-			.icon-6 {
-				background-position: 50% -44px;
-			}
-			.icon-7 {
-				background-position: 50% -42px;
-			}
-			.icon-8 {
-				background-position: 50% -40px;
-			}
-		}
+		
 	}
 	.learn-more {
 		background: url(../img/learn-more.jpg) center center no-repeat;
 		background-size: cover;
 		padding: 60px 0;
+		margin-bottom: -30px;
 		p {
 			text-transform: uppercase;
 			font-size: 13px;
